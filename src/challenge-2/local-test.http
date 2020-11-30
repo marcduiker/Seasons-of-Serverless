@@ -1,0 +1,2 @@
+@img=http://2.bp.blogspot.com/-syNFDpeF8Tw/UZobf5gfzgI/AAAAAAAAAkI/tg-fcYWIOdg/s1600/ragi-ladoos.jpg
+GET http://localhost:7071/api/getprediction?img={{img}}
