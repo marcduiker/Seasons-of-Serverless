@@ -1,0 +1,2 @@
+@turkeyWeight=20
+GET http://localhost:7071/api/recipe/turkey/{{turkeyWeight}}
