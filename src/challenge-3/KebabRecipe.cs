@@ -20,6 +20,8 @@ namespace SeasonsOfServerless
         // Calculations are based on 1 pound of lamb meat = 0.45 kg = 4 persons.
         public string RecipeSource => "https://www.thespruceeats.com/adana-kebab-4164647";
         public string NrOfServings => $"Number of servings: {Math.Round(_lambMeat*4/0.45, _roundingPrecision)}.";
+        // I'm estimating that with the original recipe you can make 4 kebabs of +/- 12cm each, so 48 cm (0.48m) in total.
+        public string Length => $"Total length of the kebab: {Math.Round(_lambMeat*0.48/0.45, _roundingPrecision)} meter.";
         public string Lamb => $"Lamb meat: {Math.Round(_lambMeat, _roundingPrecision)} kg.";
         public string Onion => $"Onions: {Math.Round(_lambMeat/0.45, _roundingPrecision)} pieces.";
         public string Garlic => $"Garlic cloves: {Math.Round(_lambMeat*4/0.45, _roundingPrecision)} pieces.";
