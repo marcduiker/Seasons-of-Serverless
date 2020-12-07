@@ -1,0 +1,2 @@
+@lambWeightInKg=0,45
+GET http://localhost:7071/api/recipe/kebab/{{lambWeightInKg}}
