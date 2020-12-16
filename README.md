@@ -10,13 +10,13 @@ Of course, we know that's not possible this year, so we've come up with an alter
 
 Grosses bises, Dominique et Simone
 
-## Challenge 2: Lovely Ladoos
+## Challenge 4: A Big BBQ!
 
-**Featured Region: India**
+**Featured Region: LATAM/Brazil**
 
-**Your Chefs: Jasmine Greenaway, Cloud Advocate (Microsoft) with Soumya Narapaju and Aditya Raman, Microsoft Student Ambassadors**
+**Your Chefs: Lucas Santos, Cloud Advocate (Microsoft) with Rogerio Rodrigues and Sydney Cirqueira, Microsoft Student Ambassadors**
 
-It's Diwali season in India! A very popular delicacy that Indians eat during Diwali are ladoos, balls of flour dipped in sugar syrup. Can you create a machine learning model to detect a proper ladoo? [Learn more about this challenge](Nov-30-2020.md).
+In Brazil, everyone loves a big barbecue! Brazilian barbecue is justifiably famous. Some families have created whole systems to help organize the amount of food needed for the number of people invited to a big barbecue. We have gained access to a spreadsheet used to organize large family barbecues: [here it is](graphics/bbq-spreadsheet.xlsx). Big events like this can get expensive, and you need to stay in within your budget. Your challenge? Using the percentages in the spreadsheet, create a serverless method of determining how many people you can invite based on a given budget. [Learn more about this challenge](Dec-14-2020.md).
 
 ## Contents
 
@@ -51,6 +51,8 @@ Each year at this time, we prepare something special to help you learn Serverles
 - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-10922-cxa)**
 - **[Azure Account](https://azure.microsoft.com/?WT.mc_id=academic-10922-cxa)**
 - **[Azure Functions Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=academic-10922-cxa)**
+- **[Azure Static Web Apps Quickstart](https://docs.microsoft.com/azure/static-web-apps/get-started-portal?tabs=vanilla-javascript&WT.mc_id=academic-10922-cxa)**
+- **[Azure Static Web Apps Student Starter Kit](https://github.com/GeekTrainer/aswa-student-starter-kit)**
 
 ## Azure For Students Account
 
@@ -78,9 +80,15 @@ Here are all the sample solutions.
 
 ### Solutions by Week
 
-| Challenges | Description | Important Resources | Responsible | Solution |
-| ---------- | ----------- | ------------------- | ----------- | -------- |
-
+| Date                     | Description        | Region                     | Chefs                                            | Solution                                                                                                   |
+| ------------------------ | ------------------ | -------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| [Nov 23](Nov-23-2020.md) | The Perfect Turkey | North America              | Jen Looper, Eric Yu, Darren Butler               | [Solution](https://dev.to/azure/seasonsofserverless-solution-1-developing-the-perfect-holiday-turkey-2p3f) |
+| [Nov 30](Nov-30-2020.md) | Lovely Ladoos      | India                      | Jasmine Greenaway, Soumya Narapaju, Aditya Raman | [Solution](https://dev.to/azure/seasonsofserverless-solution-2-developing-lovely-ladoos-41h9)
+| [Dec 7](Dec-7-2020.md)   | The Longest Kebab  | Turkey | Cecil Phillip, Baris Ceviz  | [Solution](https://dev.to/azure/seasonsofserverless-solution-3-the-longest-kebab-3pe1)
+| Dec 14                   | A Big BBQ!   |   Brazil/LATAM                         |                                                  |
+| Dec 21                   |                    |                            |                                                  |
+| Dec 28                   |                    |                            |                                                  |
+| Jan 4                    |                    |                            |                                                  |
 
 ## Contributing
 

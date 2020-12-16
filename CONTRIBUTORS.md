@@ -28,15 +28,15 @@ We will be listing contributors in alphabetical order, by week. At the end of th
   - [How to participate? 💻](#how-to-participate-%f0%9f%92%bb)
   - [Adding a solution](#adding-a-solution)
   - [Our Awesome Contributors 🏆](#our-awesome-contributors-%f0%9f%8f%86)
-      - [WEEK ONE](#week-one)
+  - [WEEK ONE](#week-one)
+  - [WEEK TWO](#week-two)
+  - [WEEK THREE](#week-three)
 
-
-
-<hr/>
+---
 
 #### WEEK ONE
 
-- [Marc Duiker](https://github.com/marcduiker/Seasons-of-Serverless/tree/challenge-1/src/challenge-1) - C# 🏎 
+- [Marc Duiker](https://github.com/marcduiker/Seasons-of-Serverless/tree/challenge-1/src/challenge-1) - C# 🏎
 - [Alexis Horgix Chotard](https://github.com/Horgix/seasons-of-serverless/tree/master/w1-turkey-recipe) - Python
 - [Brett Miller](https://github.com/brettmillerb/seasons-of-serverless/tree/challenge1) - PowerShell
 - [Brandon H](https://github.com/brandonh-msft/2020-seasons-of-serverless/tree/main/challenge-1) - PowerApps
@@ -57,10 +57,47 @@ We will be listing contributors in alphabetical order, by week. At the end of th
 - [Christian Piet](https://github.com/Manbearpiet/seasonofserverless) - PowerShell
 - [Jonathan Silvestri](https://github.com/silvestrijonathan/azure-practice/tree/main/PerfectTurkey) - TypeScript
 - [Chris Petit](https://github.com/ChrisPetit/ThePerfectTurkey/tree/main/ThePerfectTurkey) - C#
+- [Daniel Paulus](https://github.com/PaulusTM/Seasons-of-Serverless/tree/main/src/challenge-1) - TypeScript
 
-
-<hr/>
+---
 
 #### WEEK TWO
 
-- Who will be the first? - 🏎 
+- [Rebecca Trapani](https://github.com/errbufferoverfl/violet-lobster) - Python, Tensorflow
+- [Christian Lechner](https://github.com/lechnerc77/SeasonOfServerlessWeek2) - TypeScript 🏎
+- [Chris Petit](https://github.com/ChrisPetit/LovelyLadoos) - ASP.NET core, C#
+- [Stuart Leaver](https://github.com/stuartleaver/seasons-of-serverless/tree/main/02-lovely-ladoos) - C#, Static Web Apps
+- [Barbara Forbes](https://github.com/Ba4bes/SeasonsOfServerless/tree/main/C02-Lovely_Ladoos) - PowerShell
+- [Christophe Chichmanian](https://github.com/Christophe-Ch/SeasonsOfServerless2020/tree/main/LovelyLadoos) - JavaScript
+- [Daniel Paulus](https://github.com/PaulusTM/Seasons-of-Serverless/tree/main/src/challenge-2) - TypeScript
+- [Locksley Kolakowski](https://github.com/LocksleyLK/seasons-of-serverless/tree/master/ladooVision) - JavaScript
+- [Marc Duiker](https://github.com/marcduiker/Seasons-of-Serverless/tree/main/src/challenge-2) - C#
+
+---
+
+#### WEEK THREE
+
+- [Marc Duiker](https://github.com/marcduiker/Seasons-of-Serverless/tree/main/src/challenge-3) - C# 🏎
+- [Chris Petit](https://github.com/ChrisPetit/LongestKebab) - .NET Core
+- [Rebecca Trapani](https://github.com/errbufferoverfl/violet-lobster/tree/main/week-03) - Python
+- [Christian Lechner](https://github.com/lechnerc77/SeasonOfServerlessWeek3) - TypeScript
+- [Barbara Forbes](https://github.com/Ba4bes/SeasonsOfServerless/tree/main/C03-The_Longest_Kebab) - PowerShell
+- [Jose R. Cadena](https://github.com/josercadena/seasons-of-serverless-week-3) - C#
+- [Locksley Kolakowski](https://github.com/LocksleyLK/seasons-of-serverless/tree/master/longestKebab) - JavaScript
+- [Stuart Leaver](https://github.com/stuartleaver/seasons-of-serverless/tree/main/03-the-longest-kebab) - TypeScript, Static Web Apps
+- [Christophe Chichmanian](https://github.com/Christophe-Ch/SeasonsOfServerless2020/tree/main/TheLongestKebab) - JavaScript
+
+#### WEEK FOUR
+
+- [Ewerton Jordão](https://github.com/EwertonJordao/bbqbrazil_seasonserverless4) - PowerShell 🏎
+- [Christian Lechner](https://github.com/lechnerc77/SeasonOfServerlessWeek4) - JavaScript
+- [Rebecca Trapani](https://github.com/errbufferoverfl/violet-lobster/tree/main/week-04) - Python
+- []() - 
+
+---
+
+#### LATE BUT MENTIONABLE SUBMISSIONS
+
+- [Drew Skwiers-Koballa](https://github.com/dzsquared/seasons-of-serverless-week1) - Python
+- [Francesco La Torre](https://github.com/Francescolatorre/serverless-challenge-turkey) - JavaScript
+
