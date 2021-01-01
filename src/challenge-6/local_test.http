@@ -1,0 +1,20 @@
+### Add chocolate
+@chocolate=nougat
+POST http://localhost:7071/api/add/{{chocolate}}
+
+### Remove chocolate
+@chocolate=bonbon
+DELETE http://localhost:7071/api/remove/{{chocolate}}
+
+### List chocolates
+GET http://localhost:7071/api/listchocolates
+
+### Reserve chocolate
+@chocolate=bonbon
+@name=Marc
+POST http://localhost:7071/api/reserve/{{name}}/{{chocolate}}
+
+### Unreserve chocolate
+@chocolate=bonbon
+@name=Marc
+PATCH http://localhost:7071/api/unreserve/{{name}}/{{chocolate}}
