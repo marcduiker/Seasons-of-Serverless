@@ -9,5 +9,8 @@ namespace SeasonsOfServerless
         Task Remove(string chocolate);
         Task Reserve((string name, string chocolate) reservation);
         Task UnReserve(string name);
+
+        Task<List<string>> GetAvailableChocolates();
+        Task<Dictionary<string, string>> GetReservedChocolates();
     }
 }

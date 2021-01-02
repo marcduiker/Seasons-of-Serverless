@@ -1,12 +1,10 @@
 using System;
-using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System.Net.Http;
 using Microsoft.Azure.WebJobs.Extensions.DurableTask;
 
@@ -19,15 +17,29 @@ namespace SeasonsOfServerless
             [HttpTrigger(
                 AuthorizationLevel.Function,
                 nameof(HttpMethod.Get),
-                Route = "listchocolates")] HttpRequest req,
+                Route = "list")] HttpRequest req,
             ILogger log,
             [DurableClient] IDurableEntityClient entityClient
         )
         {
             var entityId = new EntityId(nameof(ChocolateBox), Environment.GetEnvironmentVariable("ChocolateBoxId"));
             var entityResponse = await entityClient.ReadEntityStateAsync<ChocolateBox>(entityId);
+            
+            IActionResult result = new BadRequestResult();
+            if (entityResponse.EntityExists)
+            {
+                result = new OkObjectResult(
+                    new {
+                        available = entityResponse.EntityState.AvailableChocolates,
+                        reserved = entityResponse.EntityState.ReservedChocolates
+                    });
+            }
+            else
+            {
+                result = new BadRequestObjectResult("ChocolateBox is empty. Please add chocolates first.");
+            }
 
-            return new OkObjectResult(entityResponse.EntityState.AvailableChocolates);
+            return result;
         }
     }
 }

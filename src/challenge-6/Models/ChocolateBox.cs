@@ -12,10 +12,8 @@ namespace SeasonsOfServerless
     {
         public ChocolateBox()
         {
-            if (AvailableChocolates == null)
-            {
-                AvailableChocolates = new List<string>();
-            }
+            AvailableChocolates = new List<string>();
+            ReservedChocolates = new Dictionary<string, string>();
         }
         
         [JsonProperty("availableChocolates")]
@@ -24,9 +22,14 @@ namespace SeasonsOfServerless
         [JsonProperty("reservedChocolates")]
         public Dictionary<string, string> ReservedChocolates { get; set; }
 
-        public Task<List<string>> ListAvailableChocolates()
+        public Task<List<string>> GetAvailableChocolates()
         {
             return Task.FromResult(AvailableChocolates);
+        }
+
+        public Task<Dictionary<string, string>> GetReservedChocolates()
+        {
+            return Task.FromResult(ReservedChocolates);
         }
 
         public Task Add(string chocolate)

@@ -1,20 +1,30 @@
+@chocolate=supreme caramel
+@name=Marc
+@taskHubName=SoSChallenge6v1
+
 ### Add chocolate
-@chocolate=nougat
-POST http://localhost:7071/api/add/{{chocolate}}
+# @name chocolateAddRequest
+POST http://localhost:7071/api/chocolate/{{chocolate}}
+
+### Check status
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/{{chocolateAddRequest.response.body.$.id}}
+    ?taskHub={{taskHubName}}
+    &connection=Storage
+    &code=1/yWgx52eGAyv7bADJDiFW1bpUaeslasK6gQQaO6DsC75c6suHVXJQ=="
 
 ### Remove chocolate
-@chocolate=bonbon
-DELETE http://localhost:7071/api/remove/{{chocolate}}
-
-### List chocolates
-GET http://localhost:7071/api/listchocolates
+# @name chocolateRemoveRequest
+DELETE http://localhost:7071/api/chocolate/{{chocolate}}
 
 ### Reserve chocolate
-@chocolate=bonbon
-@name=Marc
-POST http://localhost:7071/api/reserve/{{name}}/{{chocolate}}
+# @name reserveReponse
+POST http://localhost:7071/api/reservation/{{name}}/{{chocolate}}
 
-### Unreserve chocolate
-@chocolate=bonbon
-@name=Marc
-PATCH http://localhost:7071/api/unreserve/{{name}}/{{chocolate}}
+### Reserve chocolate
+# @name unreserveReponse
+DELETE http://localhost:7071/api/reservation/{{name}}
+
+
+### List available & reserved chocolates
+GET http://localhost:7071/api/list
+
