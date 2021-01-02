@@ -3,6 +3,7 @@
 
 # Azure Functions localsettings file
 local.settings.json
+remote_test.http
 
 # User-specific files
 *.suo
