@@ -14,7 +14,6 @@ namespace SeasonsOfServerless
         {
             var input = context.GetInput<OrchestratorInput>();
             var entityId = new EntityId(nameof(ChocolateBox), input.ChocolateBoxId );
-            
             await context.CallEntityAsync(entityId, input.OperationMethod, input.InputArgument);
             var listResult = await context.CallEntityAsync<List<string>>(entityId, input.ListMethod);
 
