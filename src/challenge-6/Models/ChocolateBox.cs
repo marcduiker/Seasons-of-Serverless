@@ -57,7 +57,7 @@ namespace SeasonsOfServerless
             var chocolate = reservation.chocolate;
             if (string.IsNullOrEmpty(chocolate))
             {
-                // Randomly select one of the available chocolates
+                // Randomly select one of the available chocolates.
                 var rnd = new Random();
                 int randomIndex =  rnd.Next(AvailableChocolates.Count-1);
                 chocolate = AvailableChocolates[randomIndex];
@@ -65,6 +65,10 @@ namespace SeasonsOfServerless
 
             if (AvailableChocolates.Contains(chocolate))
             {
+                // If the person already has a chocolate reserved 
+                // that chocolate will become available again.
+                UnReserve(reservation.name);
+
                 AvailableChocolates.Remove(chocolate);
                 ReservedChocolates.Add(reservation.name, chocolate);
             }
